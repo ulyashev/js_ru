@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <script>
+
+var login = prompt("Enter a login:", '');
+var password;
+
+
+if (login === "admin") {
+	var password = prompt("Enter a password:", "");
+	if (password === "dart vader") {
+		alert("Welcome!");
+	} else if (password === null | password === undefined) {
+		alert("Login canceled.");
+	} else {
+		alert("Incorrect password!");
+	}
+} else if (login === null | login === undefined) {
+	alert("Login canceled.");
+} else {
+	alert("I don't know you.");
+}
+  </script>
+
+</body>
+
+</html>
